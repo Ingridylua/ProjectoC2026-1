@@ -1,0 +1,21 @@
+Questão 2 — Análise de Vendas Simples
+
+Parte A — Tabela Verdade
+
+p	q	p || q
+V	V	  V
+V	F	  V
+F	V	  V
+F	F	  F
+
+Parte B — Regra de Negócio
+#include <stdio.h>
+
+int main() {
+    float vendas[10];
+    int vendaEspecial;
+    int i;
+
+    float totalVendido = 0;
+    int destaque = 0;
+    int comum = 0;
