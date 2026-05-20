@@ -10,6 +10,7 @@ F	F	  F
 
 
 Parte B — Regra de Negócio
+
 #include <stdio.h>
 
 int main() {
@@ -21,29 +22,30 @@ int main() {
     int reprovados = 0;
     float maiorNota = 0;
 
-    for (i=0, i<8,i++){
+    for (i = 0; i < 8; i++) { 
         
         printf("Digite a nota:\n");
+        scanf("%f", &notas[i]);
         
-        scanf("%f",&notas[i]);
+        printf("Digite a frequencia:\n"); 
+        scanf("%f", &frequencia);
         
-        printf("Digite a frequencia: "):
-        scanf ("%f", &frequencia);
         
-        if (notas[i]) >= 7 && frequencia >= 75) {
-            
+        if (notas[i] >= 7 && frequencia >= 75) {
             printf("APROVADO\n");
             aprovados++;
-        }else{
+        } else {
             printf("REPROVADO\n");
-            
-            if (i == 0 || notas[i] >maiorNotas)
-            
-            maiorNotas = notas [i];
-            
-            printf("Quantidade de Aprovados: %d\n",aprovados)
-            
-            printf("Quantidade de Reprovados: %d\n", aprovados)
-            
-    
+            reprovados++; 
         }
+
+        
+        if (i == 0 || notas[i] > maiorNota) { 
+            maiorNota = notas[i];
+        }
+    
+    printf("Quantidade de Aprovados: %d\n", aprovados); 
+    printf("Quantidade de Reprovados: %d\n", reprovados);
+    printf("A maior nota registrada: %.2f\n", maiorNota); //
+    return 0;
+}
