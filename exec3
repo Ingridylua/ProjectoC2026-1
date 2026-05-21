@@ -1,0 +1,60 @@
+Questão 3 — Controle de Temperaturas Simples
+
+Parte A — Tabela Verdade
+
+Complete a tabela verdade:
+p 	q 	p && q
+V 	V 	V
+V 	F 	F
+F 	V 	F
+F 	F 	F
+
+
+Parte B — Regra de Negócio
+
+#include <stdio.h>
+
+int main() {
+
+    float temperaturas[7];
+
+    int seguras = 0;
+    int fora = 0;
+
+    float soma = 0;
+    float media;
+
+    int i;
+
+    for(i = 0; i < 7; i++) {
+
+        printf ("Digite a temperatura: ")
+        scanf ("%f", &temperaturas[i]);
+
+        if (temperaturas[i] > = 20 && temperaturas[i] <= 30) {
+
+            printf ("TEMPERATURA SEGURA");
+            seguras++;
+
+        } else {
+
+            printf ("TEMPERATURA FORA DA FAIXA");
+            fora+;
+
+        }
+
+        soma = soma + temperaturas[i];
+
+    
+
+    media = soma / 7;
+
+    printf("Temperaturas seguras: %d\n", seguras);
+    printf("Fora da faixa: %d\n", fora);
+    printf("Media: %.1f\n", media);
+
+    return 0;
+}
+
+
+
