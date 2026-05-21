@@ -1,13 +1,15 @@
-Questão 3 — Controle de Temperaturas Simples
+Questão 3 — Controle de Temperaturas Simples --- Resposta da atividade
 
 Parte A — Tabela Verdade
 
+Resposta da tabela:
+
 Complete a tabela verdade:
 p 	q 	p && q
-V 	V 	V
-V 	F 	F
-F 	V 	F
-F 	F 	F
+V 	V 	  V
+V 	F 	  F
+F 	V 	  F
+F 	F 	  F
 
 
 Parte B — Regra de Negócio
