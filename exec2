@@ -8,7 +8,8 @@ V	F	  V
 F	V	  V
 F	F	  F
 
-Parte B — Regra de Negócio
+Parte B — Regra de Negócio 
+
 #include <stdio.h>
 
 int main() {
@@ -19,3 +20,32 @@ int main() {
     float totalVendido = 0;
     int destaque = 0;
     int comum = 0;
+
+for(i = 0; i < 10; i++) {
+
+        printf ("Digite o valor da venda: ");
+        scanf ( "%f, &vendas[i]);
+
+        printf ("Venda especial? 1=sim 0=nao: ");
+        scanf ("%d", &vendaEspecial);
+
+        if (vendas[i] >= 100 || vendaEspecial == 1) {
+
+            printf ("VENDA COM DESTAQUE \n");
+            destaque++;
+
+        } else {
+
+            printf ("VENDA COMUM \n");
+            comum++;
+
+        total = total + vendas[i];
+
+    }
+
+    printf ("Total vendido: %.1f", total);
+    printf ("Vendas destaque: %d", destaque);
+    printf ("Vendas comuns: %d", comum);
+
+    return 0;
+}
