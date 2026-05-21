@@ -33,7 +33,7 @@ int main() {
         printf ("Digite a temperatura: ")
         scanf ("%f", &temperaturas[i]);
 
-        if (temperaturas[i] > = 20 && temperaturas[i] <= 30) {
+        if (temperaturas[i] > = 20 && temperatura[i] <= 30) {
 
             printf ("TEMPERATURA SEGURA");
             seguras++;
