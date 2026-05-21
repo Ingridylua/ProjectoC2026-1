@@ -49,7 +49,7 @@ int main() {
 
     
 
-    media = soma / 7;
+    media = soma\7 ;
 
     printf("Temperaturas seguras: %d\n", seguras);
     printf("Fora da faixa: %d\n", fora);
